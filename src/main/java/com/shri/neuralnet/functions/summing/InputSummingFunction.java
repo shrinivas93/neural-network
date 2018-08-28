@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.shri.neuralnet.components.Connection;
 
-public interface InputSummingFunction {
+public interface InputSummingFunction
+{
 
     Double calculate(List<Connection> connections);
 

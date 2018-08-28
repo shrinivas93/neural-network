@@ -1,42 +1,51 @@
 package com.shri.neuralnet.components;
 
-public class Connection {
+public class Connection
+{
 
     private Neuron fromNeuron;
 
     private Neuron toNeuron;
 
-    public Connection() {
+    public Connection()
+    {
     }
 
-    public Connection(Neuron fromNeuron, Neuron toNeuron) {
+    public Connection(Neuron fromNeuron, Neuron toNeuron)
+    {
         super();
         this.fromNeuron = fromNeuron;
         this.toNeuron = toNeuron;
     }
 
-    public Neuron getFromNeuron() {
+    public Neuron getFromNeuron()
+    {
         return fromNeuron;
     }
 
-    public void setFromNeuron(Neuron fromNeuron) {
+    public void setFromNeuron(Neuron fromNeuron)
+    {
         this.fromNeuron = fromNeuron;
     }
 
-    public Neuron getToNeuron() {
+    public Neuron getToNeuron()
+    {
         return toNeuron;
     }
 
-    public void setToNeuron(Neuron toNeuron) {
+    public void setToNeuron(Neuron toNeuron)
+    {
         this.toNeuron = toNeuron;
     }
 
-    public Double getWeightedInput() {
+    public Double getWeightedInput()
+    {
         return this.fromNeuron.calculateWeightedOutput();
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Connection [fromNeuron=" + fromNeuron + ", toNeuron=" + toNeuron + "]";
     }
 

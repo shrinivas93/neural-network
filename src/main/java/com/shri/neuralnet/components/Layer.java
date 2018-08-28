@@ -2,39 +2,47 @@ package com.shri.neuralnet.components;
 
 import java.util.List;
 
-public class Layer {
+public class Layer
+{
 
     private Long layerNumber;
 
     private List<Neuron> nodes;
 
-    public Layer() {
+    public Layer()
+    {
     }
 
-    public Layer(Long layerNumber, List<Neuron> nodes) {
+    public Layer(Long layerNumber, List<Neuron> nodes)
+    {
         super();
         this.layerNumber = layerNumber;
         this.nodes = nodes;
     }
 
-    public Long getLayerNumber() {
+    public Long getLayerNumber()
+    {
         return layerNumber;
     }
 
-    public void setLayerNumber(Long layerNumber) {
+    public void setLayerNumber(Long layerNumber)
+    {
         this.layerNumber = layerNumber;
     }
 
-    public List<Neuron> getNodes() {
+    public List<Neuron> getNodes()
+    {
         return nodes;
     }
 
-    public void setNodes(List<Neuron> nodes) {
+    public void setNodes(List<Neuron> nodes)
+    {
         this.nodes = nodes;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Layer [layerNumber=" + layerNumber + ", nodes=" + nodes + "]";
     }
 

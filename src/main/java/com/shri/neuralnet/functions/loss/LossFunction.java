@@ -1,6 +1,7 @@
 package com.shri.neuralnet.functions.loss;
 
-public interface LossFunction {
+public interface LossFunction
+{
 
     Double calculate(Double[] expected, Double[] actual);
 

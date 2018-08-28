@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.shri.neuralnet.functions.loss.LossFunction;
 
-public class NeuralNetwork {
+public class NeuralNetwork
+{
 
     private String id;
 
@@ -16,11 +17,13 @@ public class NeuralNetwork {
 
     private LossFunction lossFunction;
 
-    public NeuralNetwork() {
+    public NeuralNetwork()
+    {
     }
 
     public NeuralNetwork(String id, Layer inputLayer, List<Layer> hiddenLayers, Layer outputLayer,
-            LossFunction lossFunction) {
+        LossFunction lossFunction)
+    {
         super();
         this.id = id;
         this.inputLayer = inputLayer;
@@ -29,50 +32,61 @@ public class NeuralNetwork {
         this.lossFunction = lossFunction;
     }
 
-    public String getId() {
+    public String getId()
+    {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(String id)
+    {
         this.id = id;
     }
 
-    public Layer getInputLayer() {
+    public Layer getInputLayer()
+    {
         return inputLayer;
     }
 
-    public void setInputLayer(Layer inputLayer) {
+    public void setInputLayer(Layer inputLayer)
+    {
         this.inputLayer = inputLayer;
     }
 
-    public List<Layer> getHiddenLayers() {
+    public List<Layer> getHiddenLayers()
+    {
         return hiddenLayers;
     }
 
-    public void setHiddenLayers(List<Layer> hiddenLayers) {
+    public void setHiddenLayers(List<Layer> hiddenLayers)
+    {
         this.hiddenLayers = hiddenLayers;
     }
 
-    public Layer getOutputLayer() {
+    public Layer getOutputLayer()
+    {
         return outputLayer;
     }
 
-    public void setOutputLayer(Layer outputLayer) {
+    public void setOutputLayer(Layer outputLayer)
+    {
         this.outputLayer = outputLayer;
     }
 
-    public LossFunction getLossFunction() {
+    public LossFunction getLossFunction()
+    {
         return lossFunction;
     }
 
-    public void setLossFunction(LossFunction lossFunction) {
+    public void setLossFunction(LossFunction lossFunction)
+    {
         this.lossFunction = lossFunction;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "NeuralNetwork [id=" + id + ", inputLayer=" + inputLayer + ", hiddenLayers=" + hiddenLayers
-                + ", outputLayer=" + outputLayer + ", lossFunction=" + lossFunction + "]";
+            + ", outputLayer=" + outputLayer + ", lossFunction=" + lossFunction + "]";
     }
 
 }
