@@ -1,0 +1,86 @@
+{
+	"id": "classifier",
+	"inputLayer": {
+		"nodes": [
+			{
+				"weight": 2.5,
+				"bias": 1.3,
+				"inputSummingFunction": "WEIGHTED_SUM",
+				"activationFunction": "SIGMOID"
+			},
+			{
+				"weight": 3.5,
+				"bias": 1.8,
+				"inputSummingFunction": "WEIGHTED_SUM",
+				"activationFunction": "SIGMOID"
+			}
+		]
+	},
+	"hiddenLayers": [
+		{
+			"nodes": [
+				{
+					"weight": 2.5,
+					"bias": 1.3,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				},
+				{
+					"weight": 3.5,
+					"bias": 1.8,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				}
+			]
+		},
+		{
+			"nodes": [
+				{
+					"weight": 2.5,
+					"bias": 1.3,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				},
+				{
+					"weight": 3.5,
+					"bias": 1.8,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				}
+			]
+		},
+		{
+			"nodes": [
+				{
+					"weight": 2.5,
+					"bias": 1.3,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				},
+				{
+					"weight": 3.5,
+					"bias": 1.8,
+					"inputSummingFunction": "WEIGHTED_SUM",
+					"activationFunction": "SIGMOID"
+				}
+			]
+		}
+	],
+	"outputLayer": {
+		"nodes": [
+			{
+				"weight": 2.5,
+				"bias": 1.3,
+				"inputSummingFunction": "WEIGHTED_SUM",
+				"activationFunction": "SIGMOID"
+			},
+			{
+				"weight": 3.5,
+				"bias": 1.8,
+				"inputSummingFunction": "WEIGHTED_SUM",
+				"activationFunction": "SIGMOID"
+			}
+		]
+	},
+	"lossFunction": "SQUARED_ERROR"
+}
