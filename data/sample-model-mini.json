@@ -1,0 +1,30 @@
+{
+    "id": "",
+    "inputLayer": {
+        "nodeCount": 50,
+        "activationFunction": "SIGMOID",
+        "inputSummingFunction": "WEIGHTED_SUM"
+    },
+    "hiddenLayers": [
+        {
+            "nodeCount": 50,
+            "activationFunction": "SIGMOID",
+            "inputSummingFunction": "WEIGHTED_SUM"
+        },
+        {
+            "nodeCount": 50,
+            "activationFunction": "SIGMOID",
+            "inputSummingFunction": "WEIGHTED_SUM"
+        },
+        {
+            "nodeCount": 50,
+            "activationFunction": "SIGMOID",
+            "inputSummingFunction": "WEIGHTED_SUM"
+        }
+    ],
+    "outputLayer": {
+        "nodeCount": 5,
+        "activationFunction": "SIGMOID",
+        "inputSummingFunction": "WEIGHTED_SUM"
+    }
+}
